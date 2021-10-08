@@ -1,0 +1,25 @@
+<!--'|capitalize' is a nija2 filter
+other filteres;
+safe- insert html tags
+lower
+upper
+title - capitalize all words in passed string
+trim
+striptags - strip html tags from passed variavles
+... and more
+-->
+<h1>Hello {{user_name|capitalize}}</h1>
+
+<p>This is page user</p>
+<!--pass variable name -->
+<p>my name is {{first}}</p>
+<p>this is {{boldstaff|safe}}</p>
+<!--for loop pass safe filter -->
+{% for i in pizza %} {{i}}<br />
+{% endfor %}
+<br />
+<br />
+{{ pizza.0 }}
+<br />
+<!--index 3 in string pizza is an intiger, so jou can make math with it -->
+{{pizza.3+10}}

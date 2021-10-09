@@ -1,3 +1,5 @@
+above {%block content%}
+
 <!--'|capitalize' is a nija2 filter
 other filteres;
 safe- insert html tags
@@ -8,7 +10,7 @@ trim
 striptags - strip html tags from passed variavles
 ... and more
 -->
-<h1>Hello {{user_name|capitalize}}</h1>
+<h1>WWWflask runHello you {{user_name|capitalize}}</h1>
 
 <p>This is page user</p>
 <!--pass variable name -->
@@ -23,3 +25,5 @@ striptags - strip html tags from passed variavles
 <br />
 <!--index 3 in string pizza is an intiger, so jou can make math with it -->
 {{pizza.3+10}}
+<br />
+{% endblock %} Below
